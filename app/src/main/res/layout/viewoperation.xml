@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardBackgroundColor="#5e35b1"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/fullscreen_dialog_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:src="@drawable/ic_close_white_24dp"/>
+            <!--                android:src="@drawable/ic_close_white_24dp" -->
+
+
+            <TextView
+                android:id="@+id/dialog_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/fullscreen_dialog_close"
+                android:text="Просмотр"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardView"
+
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/somemoney2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="38sp"
+
+            android:gravity="center"
+            android:text="Сумма"
+            android:background="@drawable/alertdialoglogin"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+                android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+
+            android:textSize="14sp"
+                android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Исполнитель"
+            />
+            <TextView
+                android:id="@+id/view_man"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:textSize="30sp"
+
+                android:textColor="@color/black"
+                android:text="Лариса"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/somemoney"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:text="Комментарий"
+            />
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_audio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-4dp"
+                android:background="@drawable/custombutton_ok"
+                android:drawableLeft="@drawable/ic_baseline_audiotrack_24"
+                android:text="Воспроизвести аудио"
+                android:textColor="@color/white"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="238dp"
+                android:id="@+id/viewfiles"
+                android:layout_above="@+id/button_audio"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/alertdialoglogin"/>
+
+            <TextView
+                android:id="@+id/view_comment"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textViefw4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/alertdialoglogin"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViefw4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_above="@+id/viewfiles"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="left"
+                android:text="Материалы"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

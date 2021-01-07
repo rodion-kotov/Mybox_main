@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <com.hanks.passcodeview.PasscodeView
+        android:id="@+id/passcodeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+
+        android:background="#2E19B6"
+        app:correctStateColor="#71bb4d"
+        app:firstInputTip="Введите код из 4 цифр! "
+
+        app:wrongInputTip="Неверный код!Ошибка!"
+        app:wrongLengthTip="Недостаточно цифр!"
+        app:correctInputTip="Вход разрешен!)"
+        app:normalStateColor="#19A9E1"
+        app:numberTextColor="#2F00FF"
+        app:passcodeLength="4"
+        app:passcodeViewType="set_passcode"
+        app:wrongStateColor="#ea2b46">
+
+
+    </com.hanks.passcodeview.PasscodeView>
+
+</RelativeLayout>

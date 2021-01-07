@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "632857978440",
+    "firebase_url": "https://mybox-b8533.firebaseio.com",
+    "project_id": "mybox-b8533",
+    "storage_bucket": "mybox-b8533.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632857978440:android:ef207c6d761b4d24a91a7d",
+        "android_client_info": {
+          "package_name": "com.example.mybox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632857978440-3ljbmphih8aupiiv15tshrb958i4g03b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTLdV0T44H9qxIaXXRgfuD9z6SzertFI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632857978440-3ljbmphih8aupiiv15tshrb958i4g03b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

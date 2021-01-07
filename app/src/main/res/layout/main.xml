@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeaderTop"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeaderFooter"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:scaleY="-1"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textdate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center"
+                android:layout_toStartOf="@+id/nexttime"
+                android:layout_toEndOf="@+id/lasttime"
+                android:text="Date"
+                android:background="@drawable/alertdialoglogin"
+
+                android:textColor="@color/black"/>
+
+            <ImageButton
+                android:id="@+id/lasttime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                  />
+
+            <ImageButton
+                android:id="@+id/nexttime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                  />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/moneyform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/alertdialoglogin"
+            android:textSize="48sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="0$" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView07"
+            android:layout_below="@+id/moneyform"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonmyaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/custombutton2"
+                    android:textColor="@color/white"
+                    android:text="Мои операции"/>
+
+
+
+                <Button
+                    android:id="@+id/buttonallaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text="Все"
+                    android:background="@drawable/custombutton1" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_view"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TextView07"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+
+
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custombutton_cancel"
+                android:text="Снять"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Внести"
+                android:background="@drawable/custombutton_ok" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
